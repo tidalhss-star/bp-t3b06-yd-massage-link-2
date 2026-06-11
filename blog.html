@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>여의도 마사지 링크 블로그 - 직장인이 전하는 찐 후기</title>
+    <meta name="description" content="여의도 마사지 링크에서 진짜 개운함을 느껴봐. 직장인들 사이에서 소문난 맛집 마사지, 24시간 운영, 전화 010-6279-0862로 바로 예약 가능! 블로그에서 생생한 후기를 확인하세요.">
+    <meta name="keywords" content="여의도 마사지, 여의도 마사지 링크, 여의도 스웨디시, 여의도 안마, 직장인 마사지, 여의도 맛집 마사지, 블로그 후기">
+    <link rel="canonical" href="https://t3b06-yd-massage-link-2.vercel.app/">
+    <meta property="og:title" content="여의도 마사지 링크 블로그 - 진짜 피 씹히는 마사지 후기">
+    <meta property="og:description" content="여의도 마사지 링크에서 진짜 개운함을 느껴봐. 직장인들 사이에서 소문난 맛집 마사지, 24시간 운영, 전화 010-6279-0862로 바로 예약 가능!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b06-yd-massage-link-2.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* RESET */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Courier New', 'Consolas', monospace;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        /* TYPOGRAPHY */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            color: #00ffc8;
+            text-shadow: 0 0 10px #00ffc8, 2px 2px 0 #ff0055;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: #ff00aa;
+            text-shadow: 0 0 8px #ff00aa, 1px 1px 0 #00ffc8;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #00ffc8;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #ffd700;
+            margin-bottom: 0.8rem;
+            text-shadow: 2px 2px 0 #ff0055;
+        }
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+            color: #cfcfcf;
+        }
+        a {
+            color: #00ffc8;
+            text-decoration: none;
+            border-bottom: 3px solid #ff0055;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #ffd700;
+            border-bottom-color: #00ffc8;
+            background-color: #222;
+        }
+        /* LAYOUT */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section {
+            padding: 80px 0;
+            border-bottom: 4px dashed #ff0055;
+        }
+        /* STREET BRUTALIST ELEMENTS */
+        .brutal-border {
+            border: 4px solid #00ffc8;
+            padding: 20px;
+            background: #111;
+            box-shadow: 8px 8px 0 #ff0055;
+            margin-bottom: 30px;
+        }
+        .brutal-border-accent {
+            border: 4px solid #ff0055;
+            padding: 20px;
+            background: #0d0d0d;
+            box-shadow: -8px 8px 0 #00ffc8;
+            margin-bottom: 30px;
+        }
+        .skew {
+            transform: skewX(-3deg);
+        }
+        .skew > * {
+            transform: skewX(3deg);
+        }
+        /* PATTERN: nav-present */
+        .nav-present {
+            background: #111;
+            border-bottom: 4px solid #00ffc8;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-present .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-present .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ff0055;
+            text-shadow: 2px 2px 0 #00ffc8;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        .nav-present .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .nav-present .nav-links li a {
+            color: #e0e0e0;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            padding: 5px 10px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-present .nav-links li a:hover {
+            background: #00ffc8;
+            color: #0a0a0a;
+            border: none;
+        }
+        /* PATTERN: hamburger-menu */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #00ffc8;
+            transition: 0.3s;
+        }
+        /* PATTERN: responsive-768 */
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-present .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #111;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                border-bottom: 4px solid #ff0055;
+                gap: 15px;
+            }
+            .nav-present .nav-links.active {
+                display: flex;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 0 15px;
+            }
+            .section {
+                padding: 60px 0;
+            }
+        }
+        /* PATTERN: tel-link */
+        .tel-link {
+            display: inline-block;
+            background: #ff0055;
+            color: #fff !important;
+            padding: 12px 30px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 3px solid #00ffc8;
+            box-shadow: 4px 4px 0 #00ffc8;
+            transition: 0.2s;
+            border-bottom: none;
+        }
+        .tel-link:hover {
+            background: #00ffc8;
+            color: #0a0a0a !important;
+            box-shadow: -4px -4px 0 #ff0055;
+            transform: translate(2px, 2px);
+        }
+        /* CUSTOM FOR BLOG */
+        .blog-post {
+            position: relative;
+        }
+        .blog-post .date {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+        .blog-post .highlight {
+            background: #ff0055;
+            color: #fff;
+            padding: 2px 8px;
+            display: inline-block;
+            transform: skewX(-5deg);
+            margin-bottom: 1rem;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item .question {
+            font-weight: 700;
+            color: #ffd700;
+            cursor: pointer;
+            border-left: 4px solid #00ffc8;
+            padding-left: 15px;
+            margin-bottom: 5px;
+        }
+        .faq-item .answer {
+            padding-left: 19px;
+            color: #bbb;
+        }
+        footer {
+            background: #111;
+            padding: 40px 0;
+            border-top: 4px solid #ff0055;
+            text-align: center;
+        }
+        footer p {
+            margin-bottom: 10px;
+            color: #888;
+        }
+        footer .tel-link {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV PRESENT -->
+    <nav class="nav-present">
+        <div class="container">
+            <div class="logo">여의도 마사지 링크</div>
+            <div class="hamburger-menu" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/contact">문의</a></li>
+                <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN BLOG SECTION -->
+    <section class="section blog-post" id="blog">
+        <div class="container">
+            <div class="brutal-border skew">
+                <div>
+                    <p class="date">2025.04.12 | 작성자: 여의도 마사지 링크</p>
+                    <h1>🔥 여의도 마사지 링크에서 진짜 피 씹히는 개운함을 맛봤다</h1>
+                    <div class="highlight">직장인 필독! 24시 운영</div>
+                </div>
+            </div>
+
+            <div class="brutal-border-accent">
+                <p>야, 형들. 나 요즘 진짜 일에 치여서 죽겠어. 밤샘 작업에 커피만 여섯 잔… 어깨는 돌덩이처럼 굳고, 두통은 기본이야. 주변에서 “여의도 마사지 링크 한 번 가봐”라는 말이 계속 들리더라고. 원래 마사지 잘 안 믿는 스타일인데, 진짜 미친 듯이 개운하다길래 한 번 도전해봤어.</p>
+                <p>위치는 여의도역 근처라 회사에서 걸어서 5분. 24시간 운영이라 야근하고도 OK. 들어가자마자 조명이 어둡고 향이 좀 쎈데, 오히려 분위기 있더라. 형이 예약하고 간 덕에 바로 룸으로 안내받았어. 전화는 <a href="tel:01062790862">010-6279-0862</a>로 하면 되고, 웬만하면 미리 전화하는 게 좋아. 자주 차더라고.</p>
+            </div>
+
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+                <div class="brutal-border" style="flex:1; min-width: 250px;">
+                    <h3>💆‍♂️ 스웨디시 코스</h3>
+                    <p>60분 / 80분 옵션. 오일 쓰는데 흡수가 잘되고 향이 부드러워. 중간에 잠들 뻔했어. 특히 손목 관리가 예술이야 – 하루 종일 키보드 치는 나한테 딱.</p>
+                </div>
+                <div class="brutal-border-accent" style="flex:1; min-width: 250px;">
+                    <h3>🕒 24시간 운영</h3>
+                    <p>새벽 2시에도 간 적 있는데, 사람 꽤 있더라. 직장인들이 야근하고 오는 패턴인 듯. 늦은 시간에도 퀄리티 안 떨어져.</p>
+                </div>
+            </div>
+
+            <div class="brutal-border">
+                <h2>💬 내가 느낀 찐 후기</h2>
+                <p>처음에는 좀 아팠어. 근데 그게 ‘시원한 아픔’이라는 거지? 선생님이 꼬인 부분을 집중적으로 풀어주는데, 진짜 돌덩이가 녹는 느낌. 마사지 끝나고 물 한 잔 마셨는데, 세상 모든 게 개운해보였어. 그날 밤 꿀잠 잤고, 다음 날 출근할 때 어깨가 날아갈 것처럼 가벼웠다.</p>
+                <p>결론: 여의도에서 진짜 마사지 맛집 찾는다면 <strong>여의도 마사지 링크</strong> 강추. 나처럼 일에 치인 직장인이라면 꼭 가봐. 재방문율 100%요. 가격도
+</body>
+</html>
