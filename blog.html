@@ -1,322 +1,81 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>여의도 마사지 링크 블로그 - 직장인이 전하는 찐 후기</title>
-    <meta name="description" content="여의도 마사지 링크에서 진짜 개운함을 느껴봐. 직장인들 사이에서 소문난 맛집 마사지, 24시간 운영, 전화 010-6279-0862로 바로 예약 가능! 블로그에서 생생한 후기를 확인하세요.">
-    <meta name="keywords" content="여의도 마사지, 여의도 마사지 링크, 여의도 스웨디시, 여의도 안마, 직장인 마사지, 여의도 맛집 마사지, 블로그 후기">
-    <link rel="canonical" href="https://yeouido-body-note.node-link.shop/blog.html">
-    <meta property="og:title" content="여의도 마사지 링크 블로그 - 진짜 피 씹히는 마사지 후기">
-    <meta property="og:description" content="여의도 마사지 링크에서 진짜 개운함을 느껴봐. 직장인들 사이에서 소문난 맛집 마사지, 24시간 운영, 전화 010-6279-0862로 바로 예약 가능!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yeouido-body-note.node-link.shop/blog.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <style>
-        /* RESET */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-        body {
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            font-family: 'Courier New', 'Consolas', monospace;
-            line-height: 1.6;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-        /* TYPOGRAPHY */
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            color: #00ffc8;
-            text-shadow: 0 0 10px #00ffc8, 2px 2px 0 #ff0055;
-            margin-bottom: 1rem;
-        }
-        h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            color: #ff00aa;
-            text-shadow: 0 0 8px #ff00aa, 1px 1px 0 #00ffc8;
-            margin-bottom: 1.5rem;
-            border-left: 6px solid #00ffc8;
-            padding-left: 1rem;
-        }
-        h3 {
-            font-size: 1.6rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #ffd700;
-            margin-bottom: 0.8rem;
-            text-shadow: 2px 2px 0 #ff0055;
-        }
-        p {
-            font-size: 1.05rem;
-            margin-bottom: 1.2rem;
-            color: #cfcfcf;
-        }
-        a {
-            color: #00ffc8;
-            text-decoration: none;
-            border-bottom: 3px solid #ff0055;
-            transition: all 0.2s;
-        }
-        a:hover {
-            color: #ffd700;
-            border-bottom-color: #00ffc8;
-            background-color: #222;
-        }
-        /* LAYOUT */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .section {
-            padding: 80px 0;
-            border-bottom: 4px dashed #ff0055;
-        }
-        /* STREET BRUTALIST ELEMENTS */
-        .brutal-border {
-            border: 4px solid #00ffc8;
-            padding: 20px;
-            background: #111;
-            box-shadow: 8px 8px 0 #ff0055;
-            margin-bottom: 30px;
-        }
-        .brutal-border-accent {
-            border: 4px solid #ff0055;
-            padding: 20px;
-            background: #0d0d0d;
-            box-shadow: -8px 8px 0 #00ffc8;
-            margin-bottom: 30px;
-        }
-        .skew {
-            transform: skewX(-3deg);
-        }
-        .skew > * {
-            transform: skewX(3deg);
-        }
-        /* PATTERN: nav-present */
-        .nav-present {
-            background: #111;
-            border-bottom: 4px solid #00ffc8;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav-present .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .nav-present .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: #ff0055;
-            text-shadow: 2px 2px 0 #00ffc8;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-        .nav-present .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-        .nav-present .nav-links li a {
-            color: #e0e0e0;
-            font-weight: 600;
-            text-transform: uppercase;
-            border: none;
-            padding: 5px 10px;
-            transition: background 0.2s, color 0.2s;
-        }
-        .nav-present .nav-links li a:hover {
-            background: #00ffc8;
-            color: #0a0a0a;
-            border: none;
-        }
-        /* PATTERN: hamburger-menu */
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 6px;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 30px;
-            height: 4px;
-            background: #00ffc8;
-            transition: 0.3s;
-        }
-        /* PATTERN: responsive-768 */
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: flex;
-            }
-            .nav-present .nav-links {
-                display: none;
-                flex-direction: column;
-                background: #111;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                padding: 20px;
-                border-bottom: 4px solid #ff0055;
-                gap: 15px;
-            }
-            .nav-present .nav-links.active {
-                display: flex;
-            }
-            h1 {
-                font-size: 2.5rem;
-            }
-            h2 {
-                font-size: 1.8rem;
-            }
-            .container {
-                padding: 0 15px;
-            }
-            .section {
-                padding: 60px 0;
-            }
-        }
-        /* PATTERN: tel-link */
-        .tel-link {
-            display: inline-block;
-            background: #ff0055;
-            color: #fff !important;
-            padding: 12px 30px;
-            font-size: 1.4rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            border: 3px solid #00ffc8;
-            box-shadow: 4px 4px 0 #00ffc8;
-            transition: 0.2s;
-            border-bottom: none;
-        }
-        .tel-link:hover {
-            background: #00ffc8;
-            color: #0a0a0a !important;
-            box-shadow: -4px -4px 0 #ff0055;
-            transform: translate(2px, 2px);
-        }
-        /* CUSTOM FOR BLOG */
-        .blog-post {
-            position: relative;
-        }
-        .blog-post .date {
-            font-size: 0.9rem;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 0.5rem;
-        }
-        .blog-post .highlight {
-            background: #ff0055;
-            color: #fff;
-            padding: 2px 8px;
-            display: inline-block;
-            transform: skewX(-5deg);
-            margin-bottom: 1rem;
-        }
-        .faq-item {
-            margin-bottom: 20px;
-        }
-        .faq-item .question {
-            font-weight: 700;
-            color: #ffd700;
-            cursor: pointer;
-            border-left: 4px solid #00ffc8;
-            padding-left: 15px;
-            margin-bottom: 5px;
-        }
-        .faq-item .answer {
-            padding-left: 19px;
-            color: #bbb;
-        }
-        footer {
-            background: #111;
-            padding: 40px 0;
-            border-top: 4px solid #ff0055;
-            text-align: center;
-        }
-        footer p {
-            margin-bottom: 10px;
-            color: #888;
-        }
-        footer .tel-link {
-            margin-top: 10px;
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta charset="UTF-8">
+<title>여의도 마사지 링크 — 블로그</title>
+<meta name="description" content="여의도에서 마사지 서비스를 선택할 때 검토해야 할 비용 구분, 포함 항목, 조건 변동을 상세히 설명합니다. 실제 금액은 문의를 통해 확인하세요.">
+<meta name="keywords" content="여의도 마사지 링크, 마사지 비용 구조, 여의도 마사지 비교, 마사지 선택 기준">
+<link rel="canonical" href="https://yeouido-body-note.node-link.shop/blog.html">
+<meta property="og:title" content="여의도 마사지 링크 — 선택 기준과 비용 구조 완전 가이드">
+<meta property="og:description" content="여의도에서 마사지 서비스를 선택할 때 검토해야 할 비용 구분, 포함 항목, 조건 변동을 상세히 설명합니다. 실제 금액은 문의를 통해 확인하세요.">
+<meta property="og:url" content="https://yeouido-body-note.node-link.shop/blog.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="m-side-sluh">
 
-    <!-- NAV PRESENT -->
-    <nav class="nav-present">
-        <div class="container">
-            <div class="logo">여의도 마사지 링크</div>
-            <div class="hamburger-menu" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">홈</a></li>
-                <li><a href="/about">소개</a></li>
-                <li><a href="/blog">블로그</a></li>
-                <li><a href="/contact">문의</a></li>
-                <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- NAVIGATION -->
+<nav class="n-grid-7z6g">
+  <ul>
+    <li><a href="/index.html">홈</a></li>
+    <li><a href="/about.html">소개</a></li>
+    <li><a href="/services.html">서비스</a></li>
+    <li><a href="/blog.html">블로그</a></li>
+    <li><a href="/contact.html">문의</a></li>
+  </ul>
+</nav>
 
-    <!-- MAIN BLOG SECTION -->
-    <section class="section blog-post" id="blog">
-        <div class="container">
-            <div class="brutal-border skew">
-                <div>
-                    <p class="date">2025.04.12 | 작성자: 여의도 마사지 링크</p>
-                    <h1>🔥 여의도 마사지 링크에서 진짜 피 씹히는 개운함을 맛봤다</h1>
-                    <div class="highlight">직장인 필독! 24시 운영</div>
-                </div>
-            </div>
+<!-- HAMBURGER MENU (모바일) -->
+<div class="n-box-4a6j">
+  <a href="javascript:void(0);" id="menu-toggle">☰ 메뉴</a>
+</div>
 
-            <div class="brutal-border-accent">
-                <p>야, 형들. 나 요즘 진짜 일에 치여서 죽겠어. 밤샘 작업에 커피만 여섯 잔… 어깨는 돌덩이처럼 굳고, 두통은 기본이야. 주변에서 “여의도 마사지 링크 한 번 가봐”라는 말이 계속 들리더라고. 원래 마사지 잘 안 믿는 스타일인데, 진짜 미친 듯이 개운하다길래 한 번 도전해봤어.</p>
-                <p>위치는 여의도역 근처라 회사에서 걸어서 5분. 24시간 운영이라 야근하고도 OK. 들어가자마자 조명이 어둡고 향이 좀 쎈데, 오히려 분위기 있더라. 형이 예약하고 간 덕에 바로 룸으로 안내받았어. 전화는 <a href="tel:01062790862">010-6279-0862</a>로 하면 되고, 웬만하면 미리 전화하는 게 좋아. 자주 차더라고.</p>
-            </div>
+<!-- HERO SECTION -->
+<section class="t-hero">
+  <h1>여의도 마사지 링크 – 당신이 몰랐던 비용 구조와 선택 기준</h1>
+  <p>여의도라는 비즈니스 중심지에서 제공되는 마사지 서비스는 가격표만으로는 파악할 수 없는 복잡한 요소들이 얽혀 있다. 이 글에서는 흔히 간과되는 비용 항목, 포함 서비스, 그리고 조건 변동까지 파헤쳐 보겠다.</p>
+  <p>대담하고 직설적인 어조로, 기존의 부드러운 리뷰가 아닌 진짜 실전 정보를 제공한다. 당신이 직접 현장에서 확인해야 할 포인트를 정확히 짚어준다.</p>
+</section>
 
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
-                <div class="brutal-border" style="flex:1; min-width: 250px;">
-                    <h3>💆‍♂️ 스웨디시 코스</h3>
-                    <p>60분 / 80분 옵션. 오일 쓰는데 흡수가 잘되고 향이 부드러워. 중간에 잠들 뻔했어. 특히 손목 관리가 예술이야 – 하루 종일 키보드 치는 나한테 딱.</p>
-                </div>
-                <div class="brutal-border-accent" style="flex:1; min-width: 250px;">
-                    <h3>🕒 24시간 운영</h3>
-                    <p>새벽 2시에도 간 적 있는데, 사람 꽤 있더라. 직장인들이 야근하고 오는 패턴인 듯. 늦은 시간에도 퀄리티 안 떨어져.</p>
-                </div>
-            </div>
+<!-- INTRODUCTION -->
+<article class="m-card-vc3x">
+  <h2>왜 ‘여의도 마사지 링크’를 꼽아야 하는가?</h2>
+  <p>첫 번째 이유는 위치적 우위다. 여의도는 교통이 편리하고, 비즈니스 인프라가 밀집해 있어 고급 마사지를 찾는 직장인과 외국인 방문객이 몰려 있다. 따라서 경쟁이 치열하고, 서비스 품질과 가격 투명성이 핵심 차별점이 된다.</p>
+  <p>두 번째 이유는 다양성이다. 같은 거리 안에서도 전통 한방부터 스웨디시, 테라피까지 선택 폭이 넓다. 하지만 선택의 기준이 명확하지 않다면, 가격표에 숨겨진 추가 비용에 당황할 수 있다. 여기서는 그런 함정을 피하는 구체적인 체크리스트를 제공한다.</p>
+</article>
 
-            <div class="brutal-border">
-                <h2>💬 내가 느낀 찐 후기</h2>
-                <p>처음에는 좀 아팠어. 근데 그게 ‘시원한 아픔’이라는 거지? 선생님이 꼬인 부분을 집중적으로 풀어주는데, 진짜 돌덩이가 녹는 느낌. 마사지 끝나고 물 한 잔 마셨는데, 세상 모든 게 개운해보였어. 그날 밤 꿀잠 잤고, 다음 날 출근할 때 어깨가 날아갈 것처럼 가벼웠다.</p>
-                <p>결론: 여의도에서 진짜 마사지 맛집 찾는다면 <strong>여의도 마사지 링크</strong> 강추. 나처럼 일에 치인 직장인이라면 꼭 가봐. 재방문율 100%요. 가격도
+<!-- COST STRUCTURE -->
+<section class="m-card-vc3x">
+  <h2>비용 구성 요소 상세 분석</h2>
+  <p>기본 요금은 “시간당 비용”이 일반적이지만, 실제 결제 금액은 ‘베이시스’와 ‘옵션’으로 나뉜다. 베이시스는 시술 시간, 마사지 종류, 룸 등급을 포함한다. 옵션은 아로마 오일, 맞춤 음악, 프리미엄 타월, 추가 마사지 도구 등 추가 서비스 비용이다.</p>
+  <p>예를 들어, 60분 스웨디시 기본 요금이 70,000원이라 하더라도, 프리미엄 오일 15,000원, 전용 라벤더 향초 8,000원을 합산하면 최종 청구액은 93,000원이 된다. 이런 옵션은 사전 안내가 필수이며, 미리 확인하지 않으면 결제 시 놀라게 된다.</p>
+  <p>또한, “시간 외 추가 요금”과 “주말/공휴일 프리미엄”도 존재한다. 평일 오후 2시 이후 또는 주말에 예약하면 기본 요금에 10~20% 가산될 가능성이 크다. 따라서 계획 단계에서 반드시 시점별 요금 변동을 체크해야 한다.</p>
+</section>
+
+<!-- CHECKLIST -->
+<article class="m-card-vc3x">
+  <h2>선택 시 반드시 확인해야 할 체크리스트</h2>
+  <p>① <strong>서비스 포함 항목 명시 여부</strong> – 계약서 혹은 웹페이지에 베이시스와 옵션이 구분돼 명시돼 있는지 확인한다. 명확한 구분이 없으면 추가 비용을 사전 협의해야 한다.</p>
+  <p>② <strong>예약 취소·변경 정책</strong> – 최소 24시간 전까지는 무료 취소가 가능한지, 그 이후엔 어느 정도의 위약금이 부과되는지 파악한다. 이는 갑작스러운 일정 변동에 대비한다.</p>
+  <p>③ <strong>시술자 자격과 경력</strong> – 마사지사의 자격증, 경력 연수, 고객 평점 등이 공개돼 있는가를 살펴본다. 고가 서비스를 받는 만큼 전문성을 확인하는 것이 필수다.</p>
+  <p>④ <strong>추가 옵션 사전 선택 여부</strong> – 오일, 향초, 특별 장비 등은 사전에 선택하고 비용을 확정하는 것이 현명하다. 현장에서 갑작스러운 선택을 강요받지 않도록 미리 요구한다.</p>
+</article>
+
+<!-- FAQ -->
+<section class="m-card-vc3x">
+  <h2>자주 묻는 질문(FAQ)</h2>
+  <h3>Q1. 여의도 마사지에서 가장 흔히 발생하는 숨은 비용은?</h3>
+  <p>시간 외 추가 요금과 옵션 선택 시 발생하는 부가 비용이 가장 흔하다. 특히, “프리미엄 오일”이나 “전용 라운지 이용” 등은 기본 요금에 10~20%를 추가한다.</p>
+  <h3>Q2. 예약은 어떻게 하면 가장 저렴하게 할 수 있나요?</h3>
+  <p>평일 낮 시간대(10시~14시)와 비성수기(주중) 예약이 가장 저렴하다. 또한, 사전 프로모션 코드를 활용하면 추가 5~10% 할인 혜택을 받을 수 있다.</p>
+  <h3>Q3. 서비스 품질을 보장받을 수 있는 기준은?</h3>
+  <p>공식 자격증 보유, 최소 3년 이상의 현장 경력, 그리고 고객 후기(실명 인증) 공개 여부가 신뢰도를 판단하는 핵심 지표다.</p>
+</section>
+
+<footer class="n-box-4a6j">
+  <p>&copy; 2026 여의도 마사지 링크. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
